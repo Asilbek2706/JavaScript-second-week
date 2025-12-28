@@ -21,3 +21,32 @@ function square(num) {
 }
 
 console.log(square(10))
+
+// Addition
+function hello(name) {
+    return `Hello ${name}`
+}
+
+console.log(hello("Asilbek"))
+
+
+function ayirma() {
+    let n1 = prompt("Ayiruvchini kiriting: ")
+    let n2 = prompt("Ayiriluvchini kiriting: ")
+
+    let result = Number(n1) - Number(n2)
+
+    return result
+}
+
+console.log(ayirma())
+
+
+function peremeteriniHisobla() {
+    let boy = prompt("Bo'yini kirit: ")
+    let eni = prompt("Enini kirit: ")
+    let result = (Number(boy) + Number(eni)) * 2
+    return result
+}
+
+alert(peremeteriniHisobla())
