@@ -1,3 +1,4 @@
+'use strict'
 const frontendDeveloper = {
     name: "Asilbek",
     age: 20,
@@ -27,3 +28,15 @@ console.log(Object.values(developer))
 
 /* Object.entries */
 console.log(Object.entries(developer))
+
+const car = {
+    model: "Malibu",
+    color: "black",
+    year: 2023,
+    coming: 5000,
+    carFunction: function() { 
+        return `My car is ${this.model} and it color is ${this.color}`
+    }
+}
+
+console.log(car.carFunction())
