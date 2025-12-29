@@ -62,3 +62,11 @@ const hasAlgo = upperBooks.some(book => book === "ALGORITMLAR");
 console.log(filterBooks)
 console.log(upperBooks)
 console.log(hasAlgo)
+
+const mevalar = ["olma", "anor", "behi", "banan", "olcha", "kivi"]
+const filterMevalar = mevalar.filter(meva => meva.startsWith("ol"))
+const gapMevalar = filterMevalar.map(meva => `${meva} mevasini yedim`)
+const hasMeva = gapMevalar.some(meva => meva === "olcha mevasini yedim")
+console.log(filterMevalar)
+console.log(gapMevalar)
+console.log(hasMeva)
