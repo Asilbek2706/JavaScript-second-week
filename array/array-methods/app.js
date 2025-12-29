@@ -54,3 +54,11 @@ console.log(natija3)
 const words = ["olma", "anor", "behi", "shaftoli", "uzum"]
 const natija4 = words.find(word => word.length > 5)
 console.log(natija4)
+
+const books = ["JS asoslari", "React dunyosi", "Python", "NodeJS", "Algoritmlar"]
+const filterBooks = books.filter(book => book.includes("JS") || book.includes("NodeJS"));
+const upperBooks = filterBooks.map(book => book.toUpperCase());
+const hasAlgo = upperBooks.some(book => book === "ALGORITMLAR");
+console.log(filterBooks)
+console.log(upperBooks)
+console.log(hasAlgo)
