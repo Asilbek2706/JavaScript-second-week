@@ -38,5 +38,14 @@ const car = {
         return `My car is ${this.model} and it color is ${this.color}`
     }
 }
-
 console.log(car.carFunction())
+
+
+const phones = [
+    { name: "iPhone 15", price: 1200, color: "black" },
+    { name: "Samsung S23", price: 1000, color: "white" },
+    { name: "Redmi Note 12", price: 300, color: "blue" }
+]
+
+const filterPhones = phones.filter(phone => phone.price > 500).map(phone => phone.name)
+console.log(filterPhones)
