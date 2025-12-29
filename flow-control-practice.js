@@ -38,3 +38,16 @@ const simpleCalculator = (num1, num2, oper) => {
 console.log(simpleCalculator(5, 10, '*'))
 
 // Berilgan massivdagi eng katta qiymatga ega element
+const getLargestElement = (array) => {
+    let largest = array[0]
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > largest) {
+            largest = array[i]
+        }
+    }
+    return largest
+}
+
+const nums = [6, 51, 7, 63, 37, 673, 38, 349, 127]
+const result = getLargestElement(nums)
+console.log(`Eng katta element: ${result}`)
