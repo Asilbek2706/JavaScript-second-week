@@ -49,3 +49,19 @@ const phones = [
 
 const filterPhones = phones.filter(phone => phone.price > 500).map(phone => phone.name)
 console.log(filterPhones)
+
+
+const products = [
+    { name: "Laptop", category: "Electronics", price: 1200, isAvailable: true },
+    { name: "Coffee Maker", category: "Home", price: 150, isAvailable: false },
+    { name: "Smartphone", category: "Electronics", price: 800, isAvailable: true },
+    { name: "Desk Lamp", category: "Home", price: 50, isAvailable: true },
+    { name: "Headphones", category: "Electronics", price: 200, isAvailable: true }
+]
+
+const filterProducts = products
+    .filter(p => p.category === "Electronics")
+    .filter(p => p.isAvailable === true)
+    .map(p => `${p.name} - ${p.price * 1.1}$`)
+
+    console.log(filterProducts)
