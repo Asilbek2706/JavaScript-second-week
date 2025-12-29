@@ -56,3 +56,11 @@ console.log(shiftArray) // python
 /* length of array */
 // I use languages = ['javascript', 'go', 'java', 'c', 'c++']
 console.log(languages.length) // 5
+
+const narxlar = [15000, 8000, 25000, 3000, 45000, 12000, 5000]
+const filterNarxlar = narxlar.filter(narx => narx > 10000).map(narx => narx * 0.8)
+console.log(filterNarxlar)
+const sortNarxlar = filterNarxlar.sort((narx1, narx2) => narx1 - narx2)
+console.log(sortNarxlar)
+const someNarxlar = sortNarxlar.some(narx => narx === 20000)
+console.log(someNarxlar)
